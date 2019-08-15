@@ -1,0 +1,54 @@
+// Place all the styles related to the Giphy controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: grey;
+}
+section {
+  max-width: 900px;
+  background-color: beige;
+  width: 90%;
+  margin: 10% auto;
+  position: relative;
+  display: none;
+}
+video {
+  margin: auto;
+  max-height: 400px;
+  padding: 5%;
+}
+h1 {
+  text-align: center;
+}
+#giphy_results {
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+}
+#giphy_results h1, #giphy_results video {
+  display: none;
+}
+
+.active {
+  display: block !important;
+}
+.right-arrow {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  top: 40%;
+}
+.right-arrow img {
+  width: 100%;
+}
+.left-arrow {
+  width: 100px;
+  position: absolute;
+  left: 20px;
+  top: 40%;
+}
+.left-arrow img {
+  width: 100%;
+  transform: rotate(180deg);
+}

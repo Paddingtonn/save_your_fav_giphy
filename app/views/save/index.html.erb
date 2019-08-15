@@ -1,0 +1,7 @@
+<% if @giphies.any? %>
+  <% @giphies.each do |giphy| %>
+    <h1><%= giphy.title %></h1>
+  <% end %>
+<% else %>
+  <h1>No giphes :(</h1>
+<% end %>

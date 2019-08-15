@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Giphies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @giphies.each do |giphy| %>
+      <tr>
+        <td><%= giphy.image %></td>
+        <td><%= giphy.title %></td>
+        <td><%= link_to 'Show', giphy %></td>
+        <td><%= link_to 'Edit', edit_giphy_path(giphy) %></td>
+        <td><%= link_to 'Destroy', giphy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Giphy', new_giphy_path %>

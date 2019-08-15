@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @giphy.image %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @giphy.title %>
+</p>
+
+<%= link_to 'Edit', edit_giphy_path(@giphy) %> |
+<%= link_to 'Back', giphies_path %>

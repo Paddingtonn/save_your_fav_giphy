@@ -1,0 +1,24 @@
+<section>
+  <div id="giphy_results">
+  </div>
+  <div class="left-arrow"><%= image_tag("arrow.png") %></div>
+  <div class="right-arrow"><%= image_tag("arrow.png") %></div>
+</section>
+
+<script id="myTemplate" type="text/html">
+
+  {{ names.forEach(function (name) { }}
+  <h1>{{= name }}</h1>
+  {{ }) }}
+
+  {{ images.forEach(function (image) { }}
+    <video autoplay loop>
+      <source
+        src="{{= image.img }}"
+        type="video/mp4"
+        data-title="{{= image.title}}"
+        id="{{= image.id }}">
+    </video>
+  {{ }) }}
+
+</script>

@@ -1,0 +1,9 @@
+<div class="giphy_form">
+  <%= form_tag("/hello", method: "get") do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:q) %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:number) %>
+    <%= submit_tag("Search") %>
+  <% end %>
+</div>
